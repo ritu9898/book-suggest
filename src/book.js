@@ -8,7 +8,7 @@ class Book extends React.Component {
     let books = [];
 
     this.props.book.forEach((element, index) => {
-      books.push(<div className="card" style={{width: "25rem"}}><div className="card-body"><h5 className="card-title">{element[0]}</h5><h6 className="card-subtitle mb-2 text-muted">{element[1]}</h6><p className="card-text"></p></div>
+      books.push(<div className="card" style={{width: "25rem"}}><div className="card-body"><h5 className="card-title">{element[0]}</h5><h6 className="card-subtitle mb-2 text-muted">{element[1]}</h6><p className="card-text">{element[2]}</p></div>
     </div>);
     console.log(books);
     });
